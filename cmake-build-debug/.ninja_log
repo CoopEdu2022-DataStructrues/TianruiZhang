@@ -1,10 +1,9 @@
 # ninja log v5
 4	2430	6977187906700082	CMakeFiles/assignment.dir/helloworld.cpp.obj	83430e660a14b88
-639	775	6977357559492182	assignment.exe	c44e3555b27f234a
+1193	1439	6977366387062669	assignment.exe	394bbeb4ab1ef838
 11	947	6977238813356262	CMakeFiles/assignment.dir/U1-L1/1.1.1.cpp.obj	e9bc70c09af441d2
 5	794	6977238285321255	CMakeFiles/assignment.dir/U1-L1/1.1.2.cpp.obj	a974ce47542ae95e
 0	1352	6977316076341034	CMakeFiles/assignment.dir/U1-L1/1.1.3.cpp.obj	9f778273957e50ed
 2	633	6977337011705648	CMakeFiles/assignment.dir/U1-L1/1.1.4.cpp.obj	431922f286492b9a
 2	638	6977357558155707	CMakeFiles/assignment.dir/U1-L1/1.1.5.cpp.obj	23b548a67149215f
 0	1190	6977366384601214	CMakeFiles/assignment.dir/U1-L1/1.1.6.cpp.obj	db855354b131de35
-1193	1439	6977366387062669	assignment.exe	394bbeb4ab1ef838
