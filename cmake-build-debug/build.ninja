@@ -49,17 +49,23 @@ cmake_ninja_workdir = C$:/Users/zhang/WebstormProjects/assignment/cmake-build-de
 
 build cmake_object_order_depends_target_assignment: phony || CMakeFiles/assignment.dir
 
-build CMakeFiles/assignment.dir/U1-L1/1.1.6.cpp.obj: CXX_COMPILER__assignment_Debug C$:/Users/zhang/WebstormProjects/assignment/U1-L1/1.1.6.cpp || cmake_object_order_depends_target_assignment
-  DEP_FILE = CMakeFiles\assignment.dir\U1-L1\1.1.6.cpp.obj.d
+build CMakeFiles/assignment.dir/Exam/Exam0/3.cpp.obj: CXX_COMPILER__assignment_Debug C$:/Users/zhang/WebstormProjects/assignment/Exam/Exam0/3.cpp || cmake_object_order_depends_target_assignment
+  DEP_FILE = CMakeFiles\assignment.dir\Exam\Exam0\3.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++14
   OBJECT_DIR = CMakeFiles\assignment.dir
-  OBJECT_FILE_DIR = CMakeFiles\assignment.dir\U1-L1
+  OBJECT_FILE_DIR = CMakeFiles\assignment.dir\Exam\Exam0
 
-build CMakeFiles/assignment.dir/Exam/1.cpp.obj: CXX_COMPILER__assignment_Debug C$:/Users/zhang/WebstormProjects/assignment/Exam/1.cpp || cmake_object_order_depends_target_assignment
-  DEP_FILE = CMakeFiles\assignment.dir\Exam\1.cpp.obj.d
+build CMakeFiles/assignment.dir/Exam/Exam0/4.cpp.obj: CXX_COMPILER__assignment_Debug C$:/Users/zhang/WebstormProjects/assignment/Exam/Exam0/4.cpp || cmake_object_order_depends_target_assignment
+  DEP_FILE = CMakeFiles\assignment.dir\Exam\Exam0\4.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++14
   OBJECT_DIR = CMakeFiles\assignment.dir
-  OBJECT_FILE_DIR = CMakeFiles\assignment.dir\Exam
+  OBJECT_FILE_DIR = CMakeFiles\assignment.dir\Exam\Exam0
+
+build CMakeFiles/assignment.dir/Exam/Exam0/2.cpp.obj: CXX_COMPILER__assignment_Debug C$:/Users/zhang/WebstormProjects/assignment/Exam/Exam0/2.cpp || cmake_object_order_depends_target_assignment
+  DEP_FILE = CMakeFiles\assignment.dir\Exam\Exam0\2.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  OBJECT_DIR = CMakeFiles\assignment.dir
+  OBJECT_FILE_DIR = CMakeFiles\assignment.dir\Exam\Exam0
 
 
 # =============================================================================
@@ -69,7 +75,7 @@ build CMakeFiles/assignment.dir/Exam/1.cpp.obj: CXX_COMPILER__assignment_Debug C
 #############################################
 # Link the executable assignment.exe
 
-build assignment.exe: CXX_EXECUTABLE_LINKER__assignment_Debug CMakeFiles/assignment.dir/U1-L1/1.1.6.cpp.obj CMakeFiles/assignment.dir/Exam/1.cpp.obj
+build assignment.exe: CXX_EXECUTABLE_LINKER__assignment_Debug CMakeFiles/assignment.dir/Exam/Exam0/3.cpp.obj CMakeFiles/assignment.dir/Exam/Exam0/4.cpp.obj CMakeFiles/assignment.dir/Exam/Exam0/2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\assignment.dir
