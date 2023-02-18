@@ -3,8 +3,10 @@
 
 using namespace std;
 int main() {
-    int number = 1234567;
+    int number = 0;
+    cin>>number;
     int w = number * 2;
+
     string h = to_string(number);
     string j = to_string(w);
     list<char> u={};

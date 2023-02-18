@@ -1,27 +1,24 @@
 #include <iostream>
-#include <list>
 using namespace std;
-bool prime(int i){
-    for (int k=2;k<i;k++){
-        if (i%k== false){
+bool prime(int k) {
+    for (int i=2;i*i<=k;i++){
+        if (k%i==0){
             return false;
         }
-
     }
     return true;
 }
 int main(){
-    list<int> primenumber = {};
-    list<int> list_ = {};
-    double number=10;
-
-    for (int k=2;k<number;k++){
-        if (prime(k)){
-            primenumber.push_front(k);
-
+    int j=0,o=2,sum=0;
+    cin >>j;
+    for (int i=2;i<=j;i++){
+        if (prime(i)) {
+            if (i-o==2){
+                sum++;
+            }
+            o=i;
         }
     }
-    for (int i=2;i<primenumber.size();i++){
-        list_.push_back(primenumber[i]-primenumber[i-1]);
-    }
+    cout <<sum<<endl;
+
 }

@@ -2,14 +2,24 @@
 #include <string>
 using namespace std;
 int main(){
-    string sentence = "1234567";
-    string frist;
-    string second;
+    int sum,walk;
+    string sentence,first,second;
 
-    for (int i = 0; i < 3; i++){
-        frist=sentence.substr(0,7-1);
-        second = sentence[6];
-        sentence=second+frist;
+    cin>>sum>>walk;
+    int g[sum];
+    for (int i=1;i <sum+1;i++){
+        g[i-1]=i;
+    }
+
+
+    for (int i = 0; i < walk; i++){
+        first=sentence.substr(0, sum - 1);
+        second = sentence[sum];
+
+        sentence= second + first;
+    }
+    for (int u=0;u<sum;u++) {
+        cout<<
     }
     cout<<sentence<<endl;
 }
