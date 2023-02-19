@@ -1,12 +1,12 @@
 # ninja log v5
 0	1846	6984783978159608	CMakeFiles/assignment.dir/U1-L6/1.6.1.cpp.obj	cf662c4832544fa9
-794	1001	6984973702119881	assignment.exe	d45052e08d5cf9bd
+592	779	6984985697601422	assignment.exe	773595b0360e87cd
 4	2032	6982218587385249	CMakeFiles/assignment.dir/U1-L5/1.5.1.cpp.obj	a42ec908316df408
 4	907	6981556193907246	CMakeFiles/assignment.dir/Exam/Exam1/2.3.cpp.obj	8547bde577a03268
 5	698	6981562202869500	CMakeFiles/assignment.dir/Exam/Exam1/2.4.cpp.obj	bd322c00505f59ee
 9	557	6984259933341859	CMakeFiles/assignment.dir/U1-L5/1.5.2.cpp.obj	fb0be2c62c5eecc
 3	590	6982488916548732	CMakeFiles/assignment.dir/Exam/Exam0/1.cpp.obj	92e1b733d2fdfaa
-7	1137	6984919372055761	CMakeFiles/assignment.dir/Exam/Exam0/3.cpp.obj	d40b11f215d2e7b
+0	591	6984985695750437	CMakeFiles/assignment.dir/Exam/Exam0/3.cpp.obj	d40b11f215d2e7b
 1	583	6984249236872779	CMakeFiles/assignment.dir/U1-L4/1.4.3.cpp.obj	e46d9202d1324948
 8	597	6984240721510104	CMakeFiles/assignment.dir/U1-L4/1.4.1.cpp.obj	161fd28b7d55edaa
 2	794	6984973700099127	CMakeFiles/assignment.dir/Exam/Exam0/4.cpp.obj	d5e4de0222431cdb
@@ -14,5 +14,3 @@
 2	537	6984252725966748	CMakeFiles/assignment.dir/U1-L5/1.5.3.cpp.obj	c1ae70a108378ca6
 4	637	6984265054270528	CMakeFiles/assignment.dir/U1-L5/1.5.4.cpp.obj	eddf8296b3891dde
 0	600	6984786053619090	CMakeFiles/assignment.dir/U1-L6/1.6.2.cpp.obj	a272a522e0a64aac
-0	591	6984985695750437	CMakeFiles/assignment.dir/Exam/Exam0/3.cpp.obj	d40b11f215d2e7b
-592	779	6984985697601422	assignment.exe	773595b0360e87cd
