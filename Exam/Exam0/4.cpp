@@ -1,31 +1,33 @@
 #include <iostream>
+#include <string>
 #include <list>
+#include <algorithm>
+
 
 using namespace std;
 int main() {
-    int number = 0;
-    cin>>number;
-    int w = number * 2;
-
-    string h = to_string(number);
-    string j = to_string(w);
-    list<char> u={};
-    list<char> e={};
-
-    for (int i=0;i<9;i++){
-        u.push_back(h[i]);
-        e.push_back(j[i]);
+    string s;
+    cin>>s;
+    string state="Yes";
+    long long num= stoi(s);
+    num*=2;
+    string o= to_string(num);
+    for (unsigned int i=0;i<o.length();i++) {
+        if (s.find(o[i])== string::npos) {
+            state="No";
+        }
 
     }
-    u.sort();
-    e.sort();
-    u.unique();
-    e.unique();
+    for (unsigned int i=0;i<s.length();i++) {
+        if (o.find(s[i])== string::npos) {
+            state="No";
+        }
 
-    if (e==u){
-        cout <<"yes";
-    }else{
-        cout <<"no";
     }
+    cout<<state<<endl<<o;
+
 
 }
+
+
+

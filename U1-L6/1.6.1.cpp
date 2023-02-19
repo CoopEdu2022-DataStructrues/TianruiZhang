@@ -2,21 +2,44 @@
 
 using namespace std;
 
-struct teacher {
-
+struct Student {
     string name;
-    string member[5]={};
+    int score;
+};
 
-};
-struct student{
+struct Teacher {
     string name;
-    int teat_score{};
+    Student student[5];
 };
+
+Student AddStudent(string name, int score) {
+    Student student;
+    student.name = name;
+    student.score = score;
+    return student;
+}
+
+Teacher AddTeacher(string name) {
+    Teacher teacher;
+    teacher.name = name;
+    for (int i = 0; i < 5; i++) {
+        teacher.student[i] = AddStudent("student" + to_string(i+1), rand() % 100);
+    }
+    return teacher;
+}
 
 int main() {
-    string summary[3]={};
-    struct teacher arr[]={"zhang", {"zhang","wang","Li","zhao","Liu"}};
-    struct teacher arr1[]={"wang", {"zhang","wang","Li","zhao","Liu"}};
-    struct teacher arr2[]={"hs", {"zhang","wang","Li","zhao","Liu"}};
+    Teacher teacher[3];
+    for (int i = 0; i < 3; i++) {
+        teacher[i] = AddTeacher("teacher" + to_string(i+1));
+    }
 
+    // print
+    for (int i = 0; i < 3; i++) {
+        cout << teacher[i].name << ", ";
+        for (int j = 0; j < 5; j++) {
+            cout << '(' << teacher[i].student[j].name << ", " << teacher[i].student[j].score << ") ";
+        }
+        cout << endl;
+    }
 }

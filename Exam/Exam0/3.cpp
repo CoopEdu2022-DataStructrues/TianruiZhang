@@ -1,25 +1,16 @@
-#include <iostream>
-#include <string>
+#include<iostream>
 using namespace std;
-int main(){
-    int sum,walk;
-    string sentence,first,second;
+int main() {
+    int n,x;
+    cin >>n>>x;
+    x%=n;
+    int nums[n];
+    for (int i=x;i<x+n;i++) {
+        cin>>nums[i%n];
 
-    cin>>sum>>walk;
-    int g[sum];
-    for (int i=1;i <sum+1;i++){
-        g[i-1]=i;
     }
-
-
-    for (int i = 0; i < walk; i++){
-        first=sentence.substr(0, sum - 1);
-        second = sentence[sum];
-
-        sentence= second + first;
+    for (int i=0;i<n-1;i++) {
+        cout<<nums[i]<<" ";
     }
-    for (int u=0;u<sum;u++) {
-        cout<<
-    }
-    cout<<sentence<<endl;
+    cout <<nums[n-1]<<'\n';
 }
