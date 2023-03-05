@@ -49,8 +49,20 @@ cmake_ninja_workdir = C$:/Users/zhang/WebstormProjects/assignment/cmake-build-de
 
 build cmake_object_order_depends_target_assignment: phony || CMakeFiles/assignment.dir
 
-build CMakeFiles/assignment.dir/U2-L2/2.2.1.cpp.obj: CXX_COMPILER__assignment_Debug C$:/Users/zhang/WebstormProjects/assignment/U2-L2/2.2.1.cpp || cmake_object_order_depends_target_assignment
-  DEP_FILE = CMakeFiles\assignment.dir\U2-L2\2.2.1.cpp.obj.d
+build CMakeFiles/assignment.dir/U2-L2/2.2.6.cpp.obj: CXX_COMPILER__assignment_Debug C$:/Users/zhang/WebstormProjects/assignment/U2-L2/2.2.6.cpp || cmake_object_order_depends_target_assignment
+  DEP_FILE = CMakeFiles\assignment.dir\U2-L2\2.2.6.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  OBJECT_DIR = CMakeFiles\assignment.dir
+  OBJECT_FILE_DIR = CMakeFiles\assignment.dir\U2-L2
+
+build CMakeFiles/assignment.dir/U2-L2/2.2.7.cpp.obj: CXX_COMPILER__assignment_Debug C$:/Users/zhang/WebstormProjects/assignment/U2-L2/2.2.7.cpp || cmake_object_order_depends_target_assignment
+  DEP_FILE = CMakeFiles\assignment.dir\U2-L2\2.2.7.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++14
+  OBJECT_DIR = CMakeFiles\assignment.dir
+  OBJECT_FILE_DIR = CMakeFiles\assignment.dir\U2-L2
+
+build CMakeFiles/assignment.dir/U2-L2/2.2.8.cpp.obj: CXX_COMPILER__assignment_Debug C$:/Users/zhang/WebstormProjects/assignment/U2-L2/2.2.8.cpp || cmake_object_order_depends_target_assignment
+  DEP_FILE = CMakeFiles\assignment.dir\U2-L2\2.2.8.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu++14
   OBJECT_DIR = CMakeFiles\assignment.dir
   OBJECT_FILE_DIR = CMakeFiles\assignment.dir\U2-L2
@@ -63,7 +75,7 @@ build CMakeFiles/assignment.dir/U2-L2/2.2.1.cpp.obj: CXX_COMPILER__assignment_De
 #############################################
 # Link the executable assignment.exe
 
-build assignment.exe: CXX_EXECUTABLE_LINKER__assignment_Debug CMakeFiles/assignment.dir/U2-L2/2.2.1.cpp.obj
+build assignment.exe: CXX_EXECUTABLE_LINKER__assignment_Debug CMakeFiles/assignment.dir/U2-L2/2.2.6.cpp.obj CMakeFiles/assignment.dir/U2-L2/2.2.7.cpp.obj CMakeFiles/assignment.dir/U2-L2/2.2.8.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\assignment.dir
