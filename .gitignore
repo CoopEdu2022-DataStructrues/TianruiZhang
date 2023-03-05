@@ -1,0 +1,5 @@
+.vscode
+cmake-build-debug
+CMakeLists.txt
+.gitignore
+test.cpp
