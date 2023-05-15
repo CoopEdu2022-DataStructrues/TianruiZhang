@@ -39,10 +39,13 @@ ListNode* merge_3_sorted_list(ListNode *list1, ListNode *list2, ListNode *list3)
   ListNode *p1=list1;
   ListNode *p2=list2;
   ListNode *p3=list3;
-  while (p3) {
+  while (p3||p2||p1) {
       n.push_back(p1->next->val);
+      p1->next;
       n.push_back(p2->next->val);
+      p2->next;
       n.push_back(p3->next->val);
+      p3->next;
       count++;
   };
   std::sort(n.begin(), n.end());
@@ -50,7 +53,9 @@ ListNode* merge_3_sorted_list(ListNode *list1, ListNode *list2, ListNode *list3)
   int count1=0;
   for (int i=0;i<n.size();i++){
       p4->next->val=n[count1];
+      p4->next;
       count1++;
+
   };
     return p4;
 }
