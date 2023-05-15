@@ -38,20 +38,21 @@ ListNode* merge_3_sorted_list(ListNode *list1, ListNode *list2, ListNode *list3)
   int count=0;
   ListNode *p1=list1;
   ListNode *p2=list2;
-  ListNode *p3=list2;
-  while (list1) {
+  ListNode *p3=list3;
+  while (p3) {
       n.push_back(p1->next->val);
       n.push_back(p2->next->val);
       n.push_back(p3->next->val);
       count++;
   };
   std::sort(n.begin(), n.end());
-  ListNode *p4;
+  ListNode *p4 = new ListNode();
   int count1=0;
   for (int i=0;i<n.size();i++){
       p4->next->val=n[count1];
       count1++;
-  }
+  };
+    return p4;
 }
 
 int main() {

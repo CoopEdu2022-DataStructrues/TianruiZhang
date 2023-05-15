@@ -38,18 +38,25 @@ ListNode* insert_by_index(ListNode *head, vector<int> arr, vector<int> idx) {
         _.insert({idx[i],arr[i]});
     };
     int count =0;
-    while (head){
-        ListNode *p1=head;
+    ListNode *p;
+    ListNode *p2=new ListNode();
+    p2->next=head;
+    while (p2!= nullptr){
+
+
+
         try {
-            ListNode *p = p1->next;
-            p1->next->val=_[count];
-            p1->next->next=p;
-        } catch () {
-            head->next;
-        }
+            p = p2->next;
+            p2->next->val=_[count];
+            p2->next->next=p;
+        }catch (...){
+
+        };
+        p2->next;
         count++;
 
     }
+    return p2;
 
 }
 
