@@ -4,4 +4,4 @@ project(assignment)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(assignment
-        Exam/Exam5/1_副本.cpp)
+        Exam/Exam6/1.cpp)

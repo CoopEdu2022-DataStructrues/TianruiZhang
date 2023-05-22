@@ -52,11 +52,11 @@ ListNode* insert_by_index(ListNode *head, vector<int> arr, vector<int> idx) {
         }catch (...){
 
         };
-        p2->next;
+        p2=p2->next;
         count++;
 
     }
-    return p2;
+    return p2->next;
 
 }
 
