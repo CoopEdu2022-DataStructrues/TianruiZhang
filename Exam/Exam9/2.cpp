@@ -42,37 +42,42 @@ vector<vector<int>> answers{
 // ····················
 vector<int> rightSideView(TreeNode *root)
 {
-  // complete this function
-  vector<int> rightSideView(TreeNode * root)
+  vector<int> res;
+  TreeNode *p;
+  std::queue<TreeNode *> q;
+  int count = 0;
+  q.push(root);
+  while (!q.empty())
   {
-    vector<int> res;
-    TreeNode *p;
-    std::queue<TreeNode *> q;
-    count = 0;
-    q.push(root);
-    while (!q.empty())
+    p = q.front();
+
+    q.pop();
+
+    // if (p->left) {
+    //   q.push(p->left);
+
+    // }
+
+    // if (p->right) {
+    //   q.push(p->right);
+    // }
+    if (p->left || p->right)
     {
-      p = q.front();
-
-      q.pop();
-
-      // if (p->left) {
-      //   q.push(p->left);
-
-      // }
-
-      // if (p->right) {
-      //   q.push(p->right);
-      // }
-      if (p->left || p->right)
-      {
+      if (p->left){
         q.push(p->left);
-        q.push(p->right);
-        count +=1;
       }
+      if (p->right){
+        q.push(p->right);
+      }
+        
+      count+=1;
     }
-    return res;
+    if (count%2==0)
+    {
+      res.push_back(p->val);
+    }
   }
+  return res;
 }
 
 int main()
